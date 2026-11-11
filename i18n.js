@@ -127,6 +127,10 @@ const translations = {
   "Hijo · Años setenta": "Son · 1970s",
   "Nieto · Años noventa": "Grandson · 1990s",
   "Bisnieto · Años 2020": "Great-grandson · 2020s",
+  "Columna del proyecto": "Project column",
+  "Vista completa de la columna de vidrio fracturado, desde la punta hasta la base, junto al lago.": "Full view of the fractured glass column beside the lake, from tip to base.",
+  "La columna conserva el eje vertical. Una fractura lo recorre de punta a base y separa las dos mitades de vidrio.": "The column retains its vertical axis. A fracture runs from tip to base, separating the two glass halves.",
+  "El friso de la Trajana, la caída y reconstrucción de la Vendôme y la desaparición de la columna de Harburgo abren tres formas de inscribir la historia. Aquí, los retratos de distintas generaciones quedan entre fragmentos de vidrio, a ambos lados de una herida que permanece abierta.": "Trajan’s frieze, the fall and reconstruction of the Vendôme Column, and the disappearance of the Harburg column offer three ways of inscribing history. Here, portraits from different generations lie between fragments of glass, on either side of a wound that remains open.",
   "Selector de idioma": "Language selector"
 };
 

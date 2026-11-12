@@ -118,7 +118,7 @@ const translations = {
   "Imagen ampliada": "Enlarged image",
   "Trayectoria": "Artist CV",
   "Artista multidisciplinario · Quito / Buenos Aires": "Multidisciplinary artist · Quito / Buenos Aires",
-  "Giovanni Francisco Zapata Castellanos trabaja con instalaciones inmersivas, videoarte, mapping e interactividad. Su obra se ha presentado en la Bienal de Cuenca, el Museo de Arte Moderno de Buenos Aires, MAPP_Montreal y otros festivales.": "Giovanni Francisco Zapata Castellanos works with immersive installations, video art, projection mapping and interactivity. His work has been presented at the Cuenca Biennial, the Buenos Aires Museum of Modern Art, MAPP_Montreal and other festivals.",
+  "Giovanni Francisco Zapata Castellanos trabaja con instalaciones inmersivas, videoarte, mapping e interactividad. Su obra se ha presentado en la Bienal de Cuenca, el Museo de Arte Moderno de Buenos Aires, MAPP_Montreal, Viena, Japón, Portugal y otros festivales.": "Giovanni Francisco Zapata Castellanos works with immersive installations, video art, projection mapping and interactivity. His work has been presented at the Cuenca Biennial, the Buenos Aires Museum of Modern Art, MAPP_Montrea; Vienna, Japón, Portugal and other festivals.",
   "Descargar CV (PDF)": "Download CV (Spanish PDF)",
   "Descargar dossier de [Hz] (PDF)": "Download [Hz] dossier (Spanish PDF)",
   "Portfolio ↗": "Portfolio ↗",

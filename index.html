@@ -101,16 +101,29 @@ h1,h2,h3 { line-height:1.12; }
 main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:justify; hyphens:auto; overflow-wrap:break-word; }
 
 .opening-grid { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); align-items:center; gap:clamp(28px,7vw,110px); }
-.opening-keywords { border-left:1px solid var(--line); padding-left:clamp(16px,3vw,42px); max-width:44ch; }
-.opening-keywords p[lang] { text-align:start; line-height:1.55; }
-.opening-keywords p+p { margin-top:16px; }
-.opening-keywords strong { color:var(--acid); }
 @media (max-width:900px) { .opening-grid { grid-template-columns:1fr; } }
+
+.opening-diagram { width:100%; min-width:0; position:relative; color:var(--acid); }
+.diagram-guides { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.opening-diagram figcaption span { position:absolute; transform:translateY(-50%); font-size:clamp(.66rem,1.2vw,1rem); font-weight:700; }
+.diagram-individuo { left:3%; top:27.26%; }
+.diagram-humanidad { right:3%; top:41.25%; }
+.diagram-fractura { left:3%; top:62.25%; }
+.diagram-vacio { right:3%; top:75.05%; }
+.opening-diagram img { display:block; width:100%; height:auto; }
+
+.ficha-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,4vw,56px);margin-top:36px}
+.ficha-group{min-width:0;border-top:1px solid var(--line);padding-top:18px}
+.ficha-group h3{font-size:clamp(20px,2.2vw,30px);line-height:1.25;color:var(--acid)}
+.ficha-group dl{margin:0}.ficha-group dl div+div,.ficha-group p+p{margin-top:12px}
+.ficha-group dt{font-weight:700}.ficha-group dd{margin:3px 0 0}.ficha-group dd,.ficha-group p{color:var(--muted)}
+.ficha-sources{display:flex;flex-wrap:wrap;gap:8px 18px}
+@media(max-width:760px){.ficha-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<header id="inicio"><a class="wordmark" href="#inicio"><img src="media/logo-purpose.png" width="154" height="150" alt="Amplitud Foundation"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Conceptualización</a><a href="#predio">Predio</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
+<header id="inicio"><a class="wordmark" href="#inicio"><img src="media/logo-purpose.png" width="154" height="150" alt="Amplitud Foundation"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Conceptualización</a><a href="#predio">Predio</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#ficha-tecnica">Ficha técnica</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
 <main id="contenido">
 <section id="obra" class="section opening" aria-labelledby="apertura-titulo">
   <div class="opening-grid">
@@ -123,12 +136,21 @@ main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:jus
 <p lang="es" class="source">Referencia: Primo Levi, Si esto es un hombre (Se questo è un uomo, 1947), capítulo «En el fondo».</p>
   </div>
     </div>
-    <aside class="opening-keywords">
-    <p lang="es"><strong>El individuo:</strong> la imagen de archivo de una vida singular.</p>
-    <p lang="es"><strong>La Humanidad:</strong> la reunión de esas vidas en la estructura escultórica.</p>
-    <p lang="es"><strong>La fractura:</strong> la violencia que interrumpe las existencias y la transmisión de la memoria.</p>
-    <p lang="es"><strong>El vacío:</strong> El vínculo con quienes ya no están.</p>
-    </aside>
+    <figure class="opening-diagram">
+      <img src="media/diagrama-materialidad.webp" width="1448" height="1086" alt="Estudio de la columna de vidrio roto con retratos entre sus fragmentos">
+      <svg class="diagram-guides" viewBox="0 0 1448 1086" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M328 296H638M328 676H552M1110 448H891M1110 815H738"/>
+        </g>
+        <g fill="currentColor"><circle cx="638" cy="296" r="6"/><circle cx="552" cy="676" r="6"/><circle cx="891" cy="448" r="6"/><circle cx="738" cy="815" r="6"/></g>
+      </svg>
+      <figcaption>
+        <span class="diagram-individuo">El individuo</span>
+        <span class="diagram-humanidad">La Humanidad</span>
+        <span class="diagram-fractura">La fractura</span>
+        <span class="diagram-vacio">El vacío</span>
+      </figcaption>
+    </figure>
   </div>
   <div class="opening-synopsis">
     <div class="reference-project-copy">
@@ -231,12 +253,23 @@ main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:jus
 <figure><button class="click-image frame" type="button" aria-label="Ampliar estudio de luz"><img id="light-img" src="media/obra.webp" width="1600" height="900" loading="lazy" alt="Estudio diurno de la columna fracturada junto al lago."></button><figcaption id="light-caption" class="caption" aria-live="polite">Luz de día · La transparencia deja ver las superposiciones y el vacío.</figcaption></figure>
 </div></div></section>
 <section id="construccion" class="section"><p class="label">Materiales y montaje</p><h2>De la esquirla<br>a la columna</h2><figure><button class="click-image" type="button" aria-label="Ampliar prearmado de las placas"><img src="media/prearmado.webp" loading="lazy" alt="Tres momentos del prearmado de un retrato entre dos placas de vidrio."></button></figure>
-<div class="steps"><p><strong>Preparación</strong>Dos placas y una lámina translúcida con el retrato impreso.</p><p><strong>Encuadre</strong>La lámina se coloca sobre el primer vidrio para comprobar la posición del rostro.</p><p><strong>Prueba en seco</strong>La segunda placa se alinea antes del laminado definitivo.</p></div>
+<div class="steps"><p><strong>Preparación</strong>Dos placas y una lámina translúcida con el retrato impreso para la prueba en seco.</p><p><strong>Encuadre</strong>La lámina se coloca sobre el primer vidrio para comprobar la posición del rostro.</p><p><strong>Prueba en seco</strong>La segunda placa se alinea antes del laminado definitivo.</p></div>
 <div class="material"><figure><button class="click-image" type="button" aria-label="Ampliar montaje junto al lago"><img src="media/montaje.webp" loading="lazy" alt="Operarios alinean una placa con retrato en la columna junto al lago."></button><figcaption class="caption">Simulación del montaje junto al lago</figcaption></figure><figure><button class="click-image" type="button" aria-label="Ampliar encuentro con la base"><img src="media/esquirlas.webp" loading="lazy" alt="Esquirlas sobre la base y la grava, con los paneles laterales despejados."></button><figcaption class="caption">El vidrio se acumula al pie y se dispersa sobre la grava</figcaption></figure></div>
 <div class="technical"><details open><summary>Vidrio, retratos y estructura</summary><p>Vidrio laminado de seguridad, con imágenes entre capas. Dos bastidores interiores de acero inoxidable AISI 316 dejan libre la fractura central. Los anclajes y las secciones requieren cálculo para el sitio.</p></details><details><summary>Base y mantenimiento</summary><p>Base propuesta de 2,40 × 1,60 × 0,60 m. Núcleo de hormigón armado y acabado de obsidiana pulida, con granito negro como alternativa. Revisar vidrios, drenaje y paneles de manera periódica, y fijaciones, batería y LED en la inspección anual.</p></details></div></section>
 <section id="energia" class="section"><p class="label">Base fotovoltaica</p><h2>Del sol a los cantos</h2><p class="intro">Dos franjas solares se integran al ras en los laterales superiores del plinto. De día cargan la batería. Al oscurecer, la energía almacenada alimenta LED blancos dirigidos hacia el vidrio.</p>
 <div class="material"><figure><button class="click-image" type="button" aria-label="Ampliar vista cenital de la base"><img src="media/cenital.webp" loading="lazy" alt="Vista cenital con módulos solares a ambos lados de las dos mitades de vidrio."></button><figcaption class="caption">Vista cenital · Franjas laterales y fractura central</figcaption></figure><figure><button class="click-image solar-es" type="button" aria-label="Ampliar funcionamiento de la base solar"><img src="media/ciclo.webp" loading="lazy" alt="Esquema de carga solar diurna, iluminación nocturna y corte conceptual de la base." style="object-fit:contain"></button><div class="solar-en" lang="en"><p><strong>Day:</strong> sunlight → solar strips → charge controller → battery.</p><p><strong>Night:</strong> battery → dusk control → white LEDs → glass edges.</p><p><strong>Base:</strong> flush side panels, a clear central gap and rear access to the service compartment.</p></div><figcaption class="caption">Ciclo día y noche · Acceso técnico posterior</figcaption></figure></div>
 <div class="technical"><details><summary>Offgridtec 30W Mono</summary><p>Módulo rígido de 30 Wp. 560 × 360 × 25 mm.</p><a class="tech-link" href="https://www.offgridtec.com/media/product_attachements/Datasheet-3-01-001530-DE%2BEN.pdf">Ficha oficial ↗</a></details><details><summary>Solbian SP 15 L AiO</summary><p>Módulo flexible de 51 W. 1089 × 292 × 2 mm de espesor de panel.</p><a class="tech-link" href="https://blog.solbian.eu/hubfs/AiO24/AiO%202.0%20Connect%202025.pdf?hsLang=en">Ficha oficial ↗</a></details></div><p class="small">Referencias comerciales para comparar. La elección, el encastre y la autonomía se definirán según las dimensiones útiles, el asoleamiento y el consumo de los LED.</p></section>
+<section id="ficha-tecnica" class="section" aria-labelledby="ficha-titulo">
+<h2 id="ficha-titulo">Ficha técnica</h2>
+<div class="ficha-grid">
+<div class="ficha-group"><h3>Identificación</h3><dl><div><dt>Título</dt><dd>Hier ist kein Warum (Aquí no hay por qué)</dd></div><div><dt>Autor</dt><dd>Amplitud Foundation</dd></div><div><dt>Año</dt><dd>2026</dd></div><div><dt>Tipología</dt><dd>Escultura de exterior, memorial</dd></div><div><dt>Emplazamiento</dt><dd>Exterior, junto al lago.</dd></div></dl></div>
+<div class="ficha-group"><h3>Materiales</h3><dl><div><dt>Columna</dt><dd>Módulos facetados de vidrio laminado de seguridad, con hojas transparentes extraclaras y fotografías de archivo encapsuladas entre las capas.</dd></div><div><dt>Estructura interna</dt><dd>Acero inoxidable AISI 316, apto para exterior.</dd></div><div><dt>Base</dt><dd>Placas de obsidiana pulida sobre núcleo de hormigón armado.</dd></div><div><dt>Energía</dt><dd>Paneles fotovoltaicos monocristalinos integrados en la cara superior de la base, con baterías de litio alojadas dentro de la base.</dd></div></dl></div>
+<div class="ficha-group"><h3>Dimensiones (propuesta)</h3><dl><div><dt>Altura total</dt><dd>Por definir</dd></div><div><dt>Columna</dt><dd>3,60 m de alto × 1,20 m de ancho × 0,80 m de profundidad</dd></div><div><dt>Separación entre las dos mitades</dt><dd>0,15 m</dd></div><div><dt>Base</dt><dd>2,40 × 1,60 × 0,60 m</dd></div></dl></div>
+<div class="ficha-group"><h3>Funcionamiento</h3><p>Carga solar diurna y encendido automático al anochecer, con una autonomía estimada de 8 a 10 horas.</p></div>
+<div class="ficha-group"><h3>Especificación preliminar del vidrio</h3><p>Configuración de partida para prototipado: dos hojas termoendurecidas (HS) de 8 mm con interlámina ionoplástica transparente de 1,52 mm, tipo SentryGlas®. Espesor nominal del conjunto: 17,52 mm.</p><p>Los contornos irregulares reproducen la geometría de las esquirlas. Se proponen cantos pulidos, puntas accesibles redondeadas y retención mecánica al bastidor. El espesor definitivo y las fijaciones se determinarán por módulo según su geometría, apoyos, viento, impacto y comportamiento tras rotura.</p><p>Para encapsular los retratos se propone ensayar impresión cerámica digital en una cara interior del vidrio. La interlámina EVA impresa queda como alternativa a ensayar. En ambos casos, el laminador debe validar el conjunto impreso y su adherencia, transparencia y durabilidad frente a humedad y radiación UV.</p><p>Referencias de especificación: ASTM C1048 para las hojas tratadas térmicamente y ASTM C1172 para el laminado. El conjunto final requiere verificación de impacto y retención tras rotura conforme a los requisitos aplicables al emplazamiento.</p><p class="ficha-sources"><a class="tech-link" href="https://store.astm.org/c1048-25.html">ASTM C1048 ↗</a><a class="tech-link" href="https://store.astm.org/c1172-24e01.html">ASTM C1172 ↗</a><a class="tech-link" href="https://www.kuraray.com/content/dam/kuraray/in/en/products/sentryglas/broucher/SentryGlas_engl_web.pdf">SentryGlas® ↗</a></p></div>
+<div class="ficha-group"><h3>Créditos y referencias visuales</h3><p>Las imágenes de referencia histórica serán proporcionadas por la institución que hace la convocatoria.</p><p>Las visualizaciones escultóricas corresponden a estudios conceptuales desarrollados para el proyecto Hier ist kein Warum y no representan una obra construida.</p></div>
+</div>
+</section>
 <section id="cv" class="section"><p class="label">Trayectoria</p><h2>Giovanni Zapata</h2><div class="cv-layout"><img class="cv-image" src="media/giovanni-zapata.png" width="370" height="208" loading="lazy" alt="Giovanni Zapata"><div><p class="intro">Artista multidisciplinario · Quito / Buenos Aires</p><p>Giovanni Francisco Zapata Castellanos trabaja con instalaciones inmersivas, videoarte, mapping e interactividad. Su obra se ha presentado en la Bienal de Cuenca, el Museo de Arte Moderno de Buenos Aires, MAPP_Montreal, Viena, Japón, Portugal y otros festivales.</p><div class="cv-actions"><a class="cta" href="giovanni-zapata-cv.pdf" download>Descargar CV (PDF)</a><a class="cta" href="dossier-hz.pdf" download>Descargar dossier de [Hz] (PDF)</a><a class="tech-link" href="https://vimeo.com/giovannizapata">Portfolio ↗</a></div></div></div></section>
 <section id="dossier" class="section"><div class="dossier-layout"><img src="media/dossier-grabado.webp" width="1672" height="941" loading="lazy" alt="Grabado de una madre y su hija frente a la escultura junto al lago"><div><p class="label">Documentación</p><h2>Dossier del proyecto</h2><p>Amplitud Foundation · 2026</p><p class="small">Las imágenes de la escultura son visualizaciones conceptuales de la propuesta.</p><a class="cta dossier" href="dossier.pdf" download>Descargar PDF <span aria-hidden="true">↓</span></a></div></div></section>
 </main><footer>Hier ist kein Warum / <span class="footer-translation">Aquí no hay por qué</span></footer>

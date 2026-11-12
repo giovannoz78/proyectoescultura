@@ -99,6 +99,13 @@ h1,h2,h3 { line-height:1.12; }
 .dossier-layout .cta { margin-top:18px; }
 @media (max-width:760px) { .dossier-layout { grid-template-columns:1fr; } }
 main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:justify; hyphens:auto; overflow-wrap:break-word; }
+
+.opening-grid { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); align-items:center; gap:clamp(28px,7vw,110px); }
+.opening-keywords { border-left:1px solid var(--line); padding-left:clamp(16px,3vw,42px); max-width:44ch; }
+.opening-keywords p[lang] { text-align:start; line-height:1.55; }
+.opening-keywords p+p { margin-top:16px; }
+.opening-keywords strong { color:var(--acid); }
+@media (max-width:900px) { .opening-grid { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -106,12 +113,22 @@ main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:jus
 <header id="inicio"><a class="wordmark" href="#inicio"><img src="media/logo-purpose.png" width="154" height="150" alt="Amplitud Foundation"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Conceptualización</a><a href="#predio">Predio</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
 <main id="contenido">
 <section id="obra" class="section opening" aria-labelledby="apertura-titulo">
+  <div class="opening-grid">
+    <div>
   <h1 id="apertura-titulo" lang="de">HIER IST KEIN WARUM</h1>
   <p class="intro opening-subtitle">Aquí no hay por qué</p>
   <div class="reference-project-copy opening-origin">
     <p lang="es">En “Si esto es un hombre”, Primo Levi relata un episodio ocurrido durante su cautiverio en Auschwitz. Atormentado por la sed, intenta tomar un carámbano que cuelga de una ventana. Un guardia se lo arrebata. Cuando Levi pregunta por qué, recibe una respuesta: «Hier ist kein Warum» («Aquí no hay por qué»).</p>
 <p lang="es">La frase condensa la lógica de un sistema que no solo priva de libertad, sino que niega incluso el derecho a preguntar y con ella, del reconocimiento del otro como sujeto.</p>
 <p lang="es" class="source">Referencia: Primo Levi, Si esto es un hombre (Se questo è un uomo, 1947), capítulo «En el fondo».</p>
+  </div>
+    </div>
+    <aside class="opening-keywords">
+    <p lang="es"><strong>El individuo:</strong> la imagen de archivo de una vida singular.</p>
+    <p lang="es"><strong>La Humanidad:</strong> la reunión de esas vidas en la estructura escultórica.</p>
+    <p lang="es"><strong>La fractura:</strong> la violencia que interrumpe las existencias y la transmisión de la memoria.</p>
+    <p lang="es"><strong>El vacío:</strong> El vínculo con quienes ya no están.</p>
+    </aside>
   </div>
   <div class="opening-synopsis">
     <div class="reference-project-copy">

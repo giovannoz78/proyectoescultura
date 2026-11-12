@@ -73,8 +73,8 @@ const translations = {
   "Referencias comerciales para comparar. La elección, el encastre y la autonomía se definirán según las dimensiones útiles, el asoleamiento y el consumo de los LED.": "Commercial models for comparison. Selection, fit and operating time depend on available space, solar exposure and LED power consumption.",
   "Referencias": "References",
   "Referencias históricas": "Historical references",
-  "Lo que una columna": "What a column",
-  "puede sostener": "can hold",
+  "¿Qué es lo que puede": "What can",
+  "sostener una columna?": "a column hold?",
   "Columna Trajana": "Trajan’s Column",
   "Roma · 113 d. C. El friso inscribe un relato en el fuste.": "Rome · 113 CE. The frieze tells a story along the shaft.",
   "Columna Vendôme": "Vendôme Column",
@@ -135,6 +135,12 @@ const translations = {
   "El friso de la Trajana, la caída y reconstrucción de la Vendôme y la desaparición de la columna de Harburgo abren tres formas de inscribir la historia. Aquí, los retratos de distintas generaciones quedan entre fragmentos de vidrio, a ambos lados de una herida que permanece abierta.": "Trajan’s frieze, the fall and reconstruction of the Vendôme Column, and the disappearance of the Harburg column offer three ways of inscribing history. Here, portraits from different generations lie between fragments of glass, on either side of a wound that remains open.",
   "Tocá un retrato para moverlo al lugar siguiente.": "Tap a portrait to move it to the next position.",
   "Mover retrato": "Move portrait",
+  "En arquitectura, la columna tiene la función de recibir el peso de lo que está arriba y llevarlo hasta la tierra. Trabaja en silencio, por compresión: cada parte empuja sobre la que tiene debajo. Nada en ella está solo; cada punto depende del que lo sostiene y sostiene a su vez al siguiente. Una columna es, ante todo, una cadena de apoyos: un pacto vertical entre lo que carga y lo que es cargado.": "In architecture, a column takes the weight above it and transfers it to the ground. It works silently in compression: each part presses on the one below. No point stands alone. Each depends on the one that supports it and in turn supports the next. A column is, above all, a chain of supports: a vertical pact between what bears the load and what is borne.",
+  "Desde Vitruvio, la columna fue también un cuerpo. Sostener fue siempre un gesto humano.": "Since Vitruvius, the column has also been understood as a body. To hold something up has always been a human gesture.",
+  "Por lo tanto, la historia de la columna también es una historia de la memoria. En Roma, la Columna Trajana (113 d.C.) narra en un friso en espiral las guerras contra los dacios, y en su base se guardaron las cenizas del emperador. Es columna, relato y tumba a la vez: sostiene el peso del recuerdo tanto como el de la piedra.": "The history of the column is therefore also a history of memory. In Rome, Trajan’s Column (113 CE) recounts the wars against the Dacians in a spiral frieze, and the emperor’s ashes were kept in its base. It is a column, a narrative and a tomb at once: it bears the weight of memory as much as the weight of stone.",
+  "En París, la Columna Vendôme (1810) está recubierta con el bronce fundido de los cañones tomados en Austerlitz, la materia de la guerra convertida en monumento. En 1871, durante la Comuna, fue derribada y quedó partida en el suelo; años después se la volvió a levantar. Una columna que conoció su propia caída y que hoy está de pie con esa historia dentro.": "In Paris, the Vendôme Column (1810) is clad in bronze melted down from cannons captured at Austerlitz, the material of war turned into a monument. In 1871, during the Paris Commune, it was toppled and lay broken on the ground. Years later it was raised again. A column that experienced its own fall and stands today with that history inside it.",
+  "En Hamburgo-Harburg, Jochen Gerz y Esther Shalev-Gerz levantaron en 1986 el Monumento contra el fascismo: una columna de doce metros recubierta de plomo, sobre la que los visitantes escribían su nombre. A medida que se llenaba, la iban hundiendo en la tierra, hasta que en 1993 desapareció por completo. Esa columna sostiene memoria en lugar de peso, y deja en quien mira la responsabilidad de recordar.": "In Hamburg-Harburg, Jochen Gerz and Esther Shalev-Gerz erected the Monument Against Fascism in 1986: a twelve-metre column clad in lead, on which visitors wrote their names. As its surface filled, it was lowered into the ground until it disappeared completely in 1993. The column bears memory in place of weight, leaving the responsibility of remembering with the viewer.",
+  "Fragmentos de vidrio roto": "Broken glass fragments",
   "Selector de idioma": "Language selector"
 };
 

@@ -83,7 +83,7 @@ const translations = {
   "Hamburgo-Harburg · 1986–1993. Tras su descenso quedó una ventana hacia el pozo.": "Hamburg-Harburg · 1986–1993. After the column was lowered, a window into the shaft remained.",
   "Documentación": "Documentation",
   "Dossier del proyecto": "Project dossier",
-  "Las imágenes de la escultura son visualizaciones de una propuesta.": "The sculpture images are visualizations of a proposal.",
+  "Las imágenes de la escultura son visualizaciones conceptuales de la propuesta.": "The images of the sculpture are conceptual visualizations of the proposal.",
   "Descargar PDF": "Download PDF (Spanish)",
   "Hier ist kein Warum / Aquí no hay por qué": "Hier ist kein Warum / There Is No Why Here",
   "Cerrar": "Close",
@@ -186,6 +186,7 @@ const translations = {
   "El punto señalado permite plantear una pausa en el recorrido. De frente se percibe el corte vertical. Al desplazarse hacia un costado, cambian las superposiciones de los rostros. La iluminación de la columna dialoga con «Menorah – Resilience».": "The marked location offers a place to pause along the walk. From the front, the vertical cut is visible. As visitors move to one side, the faces overlap in different ways. The column’s lighting is in dialogue with “Menorah – Resilience”.",
   "Perspectiva general del predio y el estanque": "Perspective view of the site and pond",
   "Perspectiva general del predio": "Perspective view of the site",
+  "Grabado de una madre y su hija frente a la escultura junto al lago": "Etching of a mother and her daughter viewing the sculpture by the lake",
   "Selector de idioma": "Language selector"
 };
 

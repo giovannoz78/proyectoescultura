@@ -76,11 +76,20 @@ h1,h2,h3 { line-height:1.12; }
 .opening-synopsis h2 { font-size:clamp(1.65rem,3.2vw,3.1rem); }
 .hero-copy h2 { font-size:clamp(2.3rem,6vw,6rem); }
 .pull { line-height:1.2; }
+
+.site-map { position:relative; }
+#predio img { height:auto; }
+.site-marker,.site-marker-key { width:14px; height:14px; border:2px solid #101313; border-radius:50%; background:var(--acid); box-shadow:0 0 0 2px var(--acid); }
+.site-marker { position:absolute; left:74.5%; top:54.6%; transform:translate(-50%,-50%); }
+.site-map-caption { display:flex; align-items:center; gap:12px; padding-left:2px; }
+.site-context { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:clamp(24px,5vw,72px); margin-top:clamp(24px,4vw,56px); align-items:start; }
+.site-context figure { max-width:380px; }
+@media (max-width:760px) { .site-context { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<header id="inicio"><a class="wordmark" href="#inicio">Amplitud Foundation</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Columna del proyecto</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
+<header id="inicio"><a class="wordmark" href="#inicio">Amplitud Foundation</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Columna del proyecto</a><a href="#predio">Predio</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
 <main id="contenido">
 <section id="obra" class="section opening" aria-labelledby="apertura-titulo">
   <h1 id="apertura-titulo" lang="de">HIER IST KEIN WARUM</h1>
@@ -143,6 +152,26 @@ h1,h2,h3 { line-height:1.12; }
 <section class="hero" aria-labelledby="titulo"><figure class="hero-visual"><img class="hero-photo" src="media/obra.webp" width="1600" height="900" fetchpriority="high" alt="Columna esbelta de vidrio dividida en dos, junto al lago, con fragmentos sobre la grava."><figcaption class="meta">Visualización del memorial junto al lago</figcaption></figure><div class="hero-copy"><p class="label">Propuesta escultórica · 2026</p><h2 id="titulo" lang="de">Hier ist<br>kein Warum</h2><em>Aquí no hay por qué</em><br><a class="cta" href="#proyecto">Recorrer la obra <span aria-hidden="true">↓</span></a></div></section>
 <div class="bands" aria-label="Dimensiones propuestas"><div><strong>3,60 m</strong><span>Altura de la columna</span></div><div><strong>15 cm</strong><span>Vacío entre las mitades</span></div><div><strong>2,40 × 1,60 m</strong><span>Huella de la base</span></div><div><strong>Exterior</strong><span>Emplazamiento junto al lago</span></div></div>
 
+<section id="predio" class="section" aria-labelledby="predio-titulo">
+  <h2 id="predio-titulo">Emplazamiento propuesto</h2>
+  <figure>
+    <div class="site-map">
+      <img src="media/predio-aerea.webp" width="2048" height="1151" loading="lazy" alt="Vista aérea del predio con las estaciones del recorrido memorial">
+      <span class="site-marker" aria-hidden="true"></span>
+    </div>
+    <figcaption class="caption site-map-caption"><span class="site-marker-key" aria-hidden="true"></span><span>Emplazamiento propuesto</span></figcaption>
+  </figure>
+  <div class="site-context">
+    <div class="reference-project-copy">
+      <p>La columna se propone junto al sendero de la orilla, cerca de la estación «Survivors rebuild lives in US/Sarasota». Allí, los retratos de distintas generaciones dialogan con la reconstrucción de la vida de los sobrevivientes y sus familias.</p>
+      <p>El punto señalado permite plantear una pausa en el recorrido. De frente se percibe el corte vertical. Al desplazarse hacia un costado, cambian las superposiciones de los rostros. La iluminación de la columna dialoga con «Menorah – Resilience».</p>
+    </div>
+    <figure>
+      <img class="frame" src="media/predio-perspectiva.webp" width="1046" height="1050" loading="lazy" alt="Perspectiva general del predio y el estanque">
+      <figcaption class="caption">Perspectiva general del predio</figcaption>
+    </figure>
+  </div>
+</section>
 <section id="rostros" class="section"><p class="label">Testimonio y transmisión</p><h2>Cuatro generaciones</h2><p class="intro">En una familia, cada generación ocupa un lugar en la sucesión del parentesco. Entre una y otra se transmiten relatos, fotografías y silencios.</p>
 <div class="toolbar" role="group" aria-label="Serie de retratos"><button type="button" data-series="mujer" aria-pressed="true">Serie femenina</button><button type="button" data-series="hombre" aria-pressed="false">Serie masculina</button></div>
 <p class="small">Tocá un retrato para moverlo al lugar siguiente.</p>

@@ -179,6 +179,13 @@ const translations = {
   "Cada fragmento de la pieza contiene una memoria individual, una ausencia. La suma de ellas produce una estructura que no podría sostenerse por separado. La obra retoma esas palabras de la cita para confrontar aquella negación con un gesto de memoria: reconocer la singularidad de cada existencia allí donde la violencia buscó reducir a las personas al anonimato.": "Each fragment of the piece contains an individual memory, an absence. Together they form a structure that could not stand if its parts were separate. The work takes up those words to confront that denial with an act of remembrance: recognizing the singularity of each life where violence sought to reduce people to anonymity.",
   "Prueba escultórica de cristales fragmentados.": "Sculptural study in fragmented glass.",
   "Menú": "Menu",
+  "Predio": "Site",
+  "Emplazamiento propuesto": "Proposed location",
+  "Vista aérea del predio con las estaciones del recorrido memorial": "Aerial view of the site with the stations along the memorial walk",
+  "La columna se propone junto al sendero de la orilla, cerca de la estación «Survivors rebuild lives in US/Sarasota». Allí, los retratos de distintas generaciones dialogan con la reconstrucción de la vida de los sobrevivientes y sus familias.": "The proposed location is beside the waterfront path, near the “Survivors rebuild lives in US/Sarasota” station. There, portraits from different generations speak to how survivors and their families rebuilt their lives.",
+  "El punto señalado permite plantear una pausa en el recorrido. De frente se percibe el corte vertical. Al desplazarse hacia un costado, cambian las superposiciones de los rostros. La iluminación de la columna dialoga con «Menorah – Resilience».": "The marked location offers a place to pause along the walk. From the front, the vertical cut is visible. As visitors move to one side, the faces overlap in different ways. The column’s lighting is in dialogue with “Menorah – Resilience”.",
+  "Perspectiva general del predio y el estanque": "Perspective view of the site and pond",
+  "Perspectiva general del predio": "Perspective view of the site",
   "Selector de idioma": "Language selector"
 };
 

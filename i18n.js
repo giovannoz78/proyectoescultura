@@ -178,6 +178,7 @@ const translations = {
   "El proyecto consiste en una columna de cristales rotos que representan la humanidad: fragmentada, múltiple, aparentemente caótica.": "The project consists of a column of broken glass that represents humanity: fragmented, multifaceted and seemingly chaotic.",
   "Cada fragmento de la pieza contiene una memoria individual, una ausencia. La suma de ellas produce una estructura que no podría sostenerse por separado. La obra retoma esas palabras de la cita para confrontar aquella negación con un gesto de memoria: reconocer la singularidad de cada existencia allí donde la violencia buscó reducir a las personas al anonimato.": "Each fragment of the piece contains an individual memory, an absence. Together they form a structure that could not stand if its parts were separate. The work takes up those words to confront that denial with an act of remembrance: recognizing the singularity of each life where violence sought to reduce people to anonymity.",
   "Prueba escultórica de cristales fragmentados.": "Sculptural study in fragmented glass.",
+  "Menú": "Menu",
   "Selector de idioma": "Language selector"
 };
 

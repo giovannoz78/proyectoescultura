@@ -245,6 +245,14 @@ const translations = {
   "La fractura": "The fracture",
   "El vacío": "The void",
   "Estudio de la columna de vidrio roto con retratos entre sus fragmentos": "Study of the broken glass column with portraits among its fragments",
+  "Galería de imágenes": "Image gallery",
+  "Dos rostros entre los fragmentos de cristal, a cada lado del vacío central, de noche junto al lago.": "Two faces among the glass fragments, on either side of the central void, at night by the lake.",
+  "La fractura: rostros ante el vacío": "The fracture: faces before the void",
+  "Rostros de distintas generaciones entre los fragmentos de cristal, de noche junto al lago.": "Faces from different generations among the glass fragments, at night by the lake.",
+  "Rostros entre fragmentos de cristal": "Faces among glass fragments",
+  "Imagen anterior": "Previous image",
+  "Imagen siguiente": "Next image",
+  "Seleccionar imagen": "Select image",
   "Selector de idioma": "Language selector"
 };
 

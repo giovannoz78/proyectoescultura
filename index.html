@@ -120,6 +120,19 @@ main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:jus
 .ficha-sources{display:flex;flex-wrap:wrap;gap:8px 18px}
 @media(max-width:760px){.ficha-grid{grid-template-columns:1fr}}
 </style>
+<style>
+.hc-track{position:relative;aspect-ratio:16/9;overflow:hidden;background:#151a19;touch-action:pan-y}
+.hc-track .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease}
+.hc-track .hero-photo.is-active{opacity:1}
+.hc-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid #ffffff40;background:#10131399;color:var(--paper);font-size:28px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0 0 3px}
+.hc-arrow:hover{border-color:var(--acid);color:var(--acid)}
+.hc-prev{left:14px}.hc-next{right:14px}
+.hc-foot{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.hc-dots{display:flex;gap:8px;padding-top:11px}
+.hc-dots button{width:9px;height:9px;border-radius:50%;border:1px solid var(--muted);background:transparent;padding:0;cursor:pointer}
+.hc-dots button[aria-pressed=true]{background:var(--acid);border-color:var(--acid)}
+@media(prefers-reduced-motion:reduce){.hc-track .hero-photo{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -188,7 +201,7 @@ main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:jus
 <div class="split-links"><a href="#rostros">De cerca · Los rostros <span aria-hidden="true">↘</span></a><a href="#luz">De lejos · La columna <span aria-hidden="true">↘</span></a></div>
 </div>
 </section>
-<section class="hero" aria-labelledby="titulo"><figure class="hero-visual"><img class="hero-photo" src="media/obra.webp" width="1600" height="900" fetchpriority="high" alt="Columna esbelta de vidrio dividida en dos, junto al lago, con fragmentos sobre la grava."><figcaption class="meta">Visualización del memorial junto al lago</figcaption></figure><div class="hero-copy"><p class="label">Propuesta escultórica · 2026</p><h2 id="titulo" lang="de">Hier ist<br>kein Warum</h2><em>Aquí no hay por qué</em></div></section>
+<section class="hero" aria-labelledby="titulo"><figure class="hero-visual hero-carousel" aria-label="Galería de imágenes"><div class="hc-track"><img class="hero-photo is-active" src="media/obra.webp" width="1600" height="900" fetchpriority="high" alt="Columna esbelta de vidrio dividida en dos, junto al lago, con fragmentos sobre la grava." data-caption="Visualización del memorial junto al lago"><img class="hero-photo" src="media/rostros-vacio.webp" width="1672" height="941" loading="lazy" alt="Dos rostros entre los fragmentos de cristal, a cada lado del vacío central, de noche junto al lago." data-caption="La fractura: rostros ante el vacío"><img class="hero-photo" src="media/rostros-fragmentos.webp" width="1672" height="941" loading="lazy" alt="Rostros de distintas generaciones entre los fragmentos de cristal, de noche junto al lago." data-caption="Rostros entre fragmentos de cristal"><button class="hc-arrow hc-prev" type="button" aria-label="Imagen anterior">‹</button><button class="hc-arrow hc-next" type="button" aria-label="Imagen siguiente">›</button></div><div class="hc-foot"><figcaption class="meta" id="hc-caption" aria-live="polite">Visualización del memorial junto al lago</figcaption><div class="hc-dots" role="group" aria-label="Seleccionar imagen"><button type="button" aria-label="Imagen 1" aria-pressed="true"></button><button type="button" aria-label="Imagen 2" aria-pressed="false"></button><button type="button" aria-label="Imagen 3" aria-pressed="false"></button></div></div></figure><div class="hero-copy"><p class="label">Propuesta escultórica · 2026</p><h2 id="titulo" lang="de">Hier ist<br>kein Warum</h2><em>Aquí no hay por qué</em></div></section>
 <div class="bands" aria-label="Dimensiones propuestas"><div><strong>3,60 m</strong><span>Altura de la columna</span></div><div><strong>15 cm</strong><span>Vacío entre las mitades</span></div><div><strong>2,40 × 1,60 m</strong><span>Huella de la base</span></div><div><strong>Exterior</strong><span>Emplazamiento junto al lago</span></div></div>
 
 <section id="predio" class="section" aria-labelledby="predio-titulo">
@@ -340,6 +353,29 @@ mobileNav.addEventListener("change", closeMenu);
 mobileToggle.closest("header").classList.add("menu-ready");
 
 initLanguage();
+</script>
+<script>
+(()=>{
+  const root=document.querySelector(".hero-carousel"); if(!root) return;
+  const slides=[...root.querySelectorAll(".hero-photo")];
+  const dots=[...root.querySelectorAll(".hc-dots button")];
+  const caption=root.querySelector("#hc-caption");
+  let current=0;
+  function show(i){
+    current=(i+slides.length)%slides.length;
+    slides.forEach((img,n)=>img.classList.toggle("is-active",n===current));
+    dots.forEach((d,n)=>d.setAttribute("aria-pressed",String(n===current)));
+    caption.textContent=tr(slides[current].dataset.caption);
+  }
+  root.querySelector(".hc-prev").addEventListener("click",()=>show(current-1));
+  root.querySelector(".hc-next").addEventListener("click",()=>show(current+1));
+  dots.forEach((d,n)=>d.addEventListener("click",()=>show(n)));
+  let x0=null;
+  root.querySelector(".hc-track").addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
+  root.querySelector(".hc-track").addEventListener("touchend",e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)show(current+(dx<0?1:-1));x0=null});
+  document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setTimeout(()=>show(current),0)));
+  show(0);
+})();
 </script>
 </body>
 </html>

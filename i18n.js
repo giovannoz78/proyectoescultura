@@ -251,6 +251,8 @@ const translations = {
   "Rostros de distintas generaciones entre los fragmentos de cristal, de noche junto al lago.": "Faces from different generations among the glass fragments, at night by the lake.",
   "Rostros entre fragmentos de cristal": "Faces among glass fragments",
   "Imagen anterior": "Previous image",
+  "La columna junto al lago a pleno sol, con la luz refractada por los cristales dibujada sobre el suelo.": "The column by the lake in full sun, with light refracted by the glass drawn across the ground.",
+  "Memorial de vidrio con luz refractada": "Glass memorial with refracted light",
   "Fragmentos de cristal con rostros sobre la base y la grava, al atardecer junto al lago.": "Glass fragments with faces on the base and gravel, at sunset by the lake.",
   "Fragmentos de rostros al atardecer": "Fragments of faces at sunset",
   "Un ojo impreso en un fragmento de cristal, entre vidrios y grava.": "An eye printed on a glass fragment, among shards and gravel.",

@@ -251,6 +251,10 @@ const translations = {
   "Rostros de distintas generaciones entre los fragmentos de cristal, de noche junto al lago.": "Faces from different generations among the glass fragments, at night by the lake.",
   "Rostros entre fragmentos de cristal": "Faces among glass fragments",
   "Imagen anterior": "Previous image",
+  "Fragmentos de cristal con rostros sobre la base y la grava, al atardecer junto al lago.": "Glass fragments with faces on the base and gravel, at sunset by the lake.",
+  "Fragmentos de rostros al atardecer": "Fragments of faces at sunset",
+  "Un ojo impreso en un fragmento de cristal, entre vidrios y grava.": "An eye printed on a glass fragment, among shards and gravel.",
+  "Ojo fragmentado entre vidrios y grava": "Fragmented eye among glass and gravel",
   "Imagen siguiente": "Next image",
   "Seleccionar imagen": "Select image",
   "Selector de idioma": "Language selector"

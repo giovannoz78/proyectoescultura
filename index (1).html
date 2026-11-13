@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hier ist kein Warum · Aquí no hay por qué</title>
+<meta name="description" content="Dossier interactivo de Hier ist kein Warum, propuesta de escultura memorial de Amplitud Foundation.">
+<meta name="theme-color" content="#101313">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+:root{color-scheme:dark;--bg:#101313;--paper:#edece4;--muted:#b3b7af;--acid:#d8e499;--line:#434942;--font:"Comfortaa",system-ui,sans-serif;--g:clamp(20px,5vw,80px)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--font);line-height:1.55}a{color:inherit}img{width:100%;display:block}button{font:inherit;color:inherit}button,a{-webkit-tap-highlight-color:transparent}:focus-visible{outline:2px solid var(--acid);outline-offset:4px}[hidden]{display:none!important}.skip{position:absolute;z-index:10;background:var(--acid);color:#111;padding:.6rem;transform:translateY(-140%)}.skip:focus{transform:translateY(0)}header{min-height:70px;padding:12px var(--g);display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.wordmark,.label,.nav,.meta,.caption,.tag{font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}.wordmark{text-decoration:none;white-space:nowrap;color:var(--acid)}.nav{display:flex;align-items:center;gap:clamp(13px,2.5vw,38px);flex-wrap:wrap}.nav a{text-decoration:none}.nav a:hover,.textlink:hover{color:var(--acid)}.hero{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(24px,5vw,72px) var(--g);background:#151a19}
+.hero-visual{grid-column:2;grid-row:1;min-width:0}
+.hero-photo{height:auto}
+.hero-copy{grid-column:1;grid-row:1}
+.label,.tag{color:var(--acid)}h1,h2,h3,p,figure,blockquote{margin:0}h1,h2,h3{font-family:var(--font);font-weight:400;line-height:.95}
+h1{font-size:clamp(54px,6.6vw,128px);letter-spacing:-.035em;margin:.12em 0}
+.hero em{font:italic clamp(23px,3vw,42px) var(--font);color:#e2e0d3}.hero .cta{margin-top:28px}.cta{display:inline-flex;align-items:center;gap:22px;border:1px solid var(--acid);padding:11px 15px;text-decoration:none;color:var(--acid);font-size:.87rem}.cta:hover{background:var(--acid);color:#101313}
+.hero .meta{padding-top:10px;color:var(--muted)}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);padding:0 var(--g)}.bands div{padding:17px 12px;border-left:1px solid var(--line)}.bands div:last-child{border-right:1px solid var(--line)}.bands strong{font-size:1.04rem;font-weight:500;display:block}.bands span{color:var(--muted);font-size:.77rem}.section{padding:clamp(54px,8vw,114px) var(--g);border-bottom:1px solid var(--line);max-width:1720px;margin:auto}.section h2{font-size:clamp(43px,6.5vw,100px);margin:11px 0 20px;letter-spacing:-.025em}.section h3{font-size:clamp(27px,3vw,44px);margin:0 0 10px}.intro{font-size:clamp(16px,1.6vw,22px);max-width:65ch;color:var(--muted)}.textsplit{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(27px,7vw,110px);align-items:start}.textsplit p+p,.stack p+p{margin-top:14px}.pull{font:clamp(36px,5.4vw,86px)/1.02 var(--font);color:var(--acid);border-left:1px solid var(--acid);padding-left:clamp(15px,3.2vw,50px)}.source{font-size:.8rem;color:var(--muted);margin-top:17px!important}.split-links{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);margin-top:36px}.split-links a{background:#171c1a;text-decoration:none;padding:22px;display:flex;justify-content:space-between;gap:12px}.split-links a:hover{background:#242d25;color:var(--acid)}.toolbar{display:flex;flex-wrap:wrap;gap:6px;margin:23px 0 9px}.toolbar button{background:transparent;border:1px solid var(--line);cursor:pointer;padding:8px 14px}.toolbar button[aria-pressed=true],.toolbar button:hover{border-color:var(--acid);color:var(--acid);background:#22291f}.frame{background:#1d2322;border:1px solid var(--line)}.frame img{height:auto}.caption{display:block;color:var(--muted);padding:11px 0 0;letter-spacing:.05em;text-transform:none}.caption strong{color:var(--paper)}.portraits{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.portrait-button{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer}.portrait-button:hover{outline:1px solid var(--acid);outline-offset:2px}.portraits img{aspect-ratio:3/2;object-fit:cover}.portraits figcaption{padding:7px 0;color:var(--muted);font-size:.79rem}.material{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}.material img{height:auto}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:22px 0 36px}.steps p{color:var(--muted);font-size:.9rem}.steps strong{display:block;color:var(--paper);margin-bottom:5px}.technical{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:35px}.technical details{border-top:1px solid var(--line);padding:13px 0}.technical summary{cursor:pointer;color:var(--paper);font-weight:600}.technical p{color:var(--muted);margin:9px 0 0}.tech-link{display:block;margin-top:7px;color:var(--acid);font-size:.86rem}.references{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:26px}.references img{height:clamp(220px,28vw,440px);object-fit:contain;background:#151a19}.references p{color:var(--muted);font-size:.88rem}.references h3{margin-top:11px;font-size:28px}.credits{display:flex;justify-content:space-between;gap:30px;align-items:end}.credits p{color:var(--muted)}footer{padding:25px var(--g);font-size:.78rem;color:var(--muted)}.small{font-size:.84rem;color:var(--muted);margin-top:16px}.click-image{border:0;padding:0;background:none;cursor:zoom-in;width:100%;display:block}.dialog{padding:15px;background:#121616;border:1px solid var(--line);width:min(1120px,95vw);max-width:none}.dialog::backdrop{background:#000c}.dialog img{max-height:76svh;object-fit:contain}.dialog button{margin-bottom:8px;background:#242a25;border:1px solid var(--line);padding:5px 12px;cursor:pointer}.dialog figcaption{font-size:.86rem;color:var(--muted);padding:7px 0}.dossier{white-space:nowrap}
+@media(max-width:760px){header{gap:10px;align-items:start;flex-direction:column;padding-block:12px}.nav{font-size:.66rem;gap:11px 15px}.hero{grid-template-columns:1fr}.hero-copy,.hero-visual{grid-column:auto;grid-row:auto}h1{font-size:clamp(54px,12vw,92px)}.bands{grid-template-columns:repeat(2,1fr);padding:0}.bands div{border-bottom:1px solid var(--line);padding:12px}.textsplit,.technical,.credits{display:grid;grid-template-columns:1fr}.split-links a{padding:13px;font-size:.86rem}.portraits{grid-template-columns:repeat(2,1fr)}.references{grid-template-columns:1fr}.references{gap:30px}.references img{height:auto;max-height:440px}.steps{gap:10px}.material{gap:12px}.section{padding-block:54px}}
+@media(max-width:360px){.nav{gap:8px}.steps,.material{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.language{display:flex;gap:4px}.language button{border:1px solid var(--line);background:transparent;padding:4px 7px;cursor:pointer;font-size:.73rem}.language button[aria-pressed=true]{border-color:var(--acid);color:var(--acid)}.cv-actions{align-self:end;display:grid;justify-items:start;gap:12px}.solar-en{display:none}.solar-en p{padding:8px 12px;border-left:2px solid var(--acid);margin:8px 0;color:var(--muted)}html[lang=en] .solar-en{display:block}html[lang=en] .solar-es{display:none}@media(max-width:760px){header{position:relative}.language{position:absolute;right:var(--g);top:8px}header .wordmark{margin-right:80px}}
+.reference-project { margin-top:clamp(44px,6vw,88px); padding-top:clamp(32px,5vw,72px); border-top:1px solid var(--line); }
+.reference-project h3 { margin:12px 0 24px; }
+.reference-project-stage { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.08fr); align-items:start; gap:clamp(24px,5vw,80px); }
+.reference-project-stage + .reference-project-stage { margin-top:clamp(28px,5vw,64px); }
+.reference-project-stage img { height:auto; }
+.reference-project-copy { max-width:66ch; font-size:clamp(1rem,1.25vw,1.15rem); line-height:1.65; }
+.reference-project-copy p+p { margin-top:1em; }
+.reference-project-copy p:has(> strong) { border-left:1px solid var(--line); padding-left:1em; }
+.reference-project-copy strong { color:var(--acid); }
+@media (min-width:901px) {
+  .reference-project-stage > figure { position:sticky; top:24px; }
+}
+@media (max-width:900px) {
+  .reference-project-stage { grid-template-columns:1fr; }
+  .reference-project-copy { margin-inline:auto; }
+}
+.references figcaption p+p{margin-top:12px}
+@media(min-width:761px) and (max-width:1000px){.references{grid-template-columns:1fr}.references figure{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:24px}.references img{height:auto;max-height:440px}}
+@media (min-width:901px) and (min-height:680px) { .light-study { position:sticky; top:24px; } }
+
+.opening h1 { max-width:18ch; margin:0; font-size:clamp(2.7rem,7vw,7.4rem); line-height:.95; overflow-wrap:anywhere; }
+.opening-subtitle { margin-top:16px; }
+.opening-subtitle, .footer-translation, .hero-copy em { color:var(--acid); }
+.opening-origin { margin-top:clamp(24px,4vw,52px); }
+.opening-synopsis { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:clamp(24px,6vw,96px); align-items:start; margin-top:clamp(36px,6vw,84px); }
+.opening-synopsis h2 { font-size:clamp(2rem,4vw,4rem); margin:0 0 16px; }
+.opening-synopsis .pull { font-size:clamp(1.6rem,3vw,3.2rem); margin-bottom:24px; }
+.opening-synopsis figure { width:min(100%,400px); }
+.opening-synopsis img { height:auto; }
+.hero-copy h2 { font-size:clamp(2.7rem,7vw,7.4rem); }
+@media (max-width:760px) { .opening-synopsis { grid-template-columns:1fr; } }
+
+.nav-toggle { display:none; }
+@media (max-width:900px) {
+  header#inicio { display:grid; grid-template-columns:minmax(0,1fr) auto auto; align-items:center; gap:8px; padding-block:10px; }
+  #inicio .wordmark { margin:0; white-space:normal; }
+  #inicio .language { position:static; grid-column:2; grid-row:1; }
+  #inicio .language button { min-height:44px; min-width:36px; }
+  #inicio .nav { grid-column:1/-1; }
+  #inicio.menu-ready .nav-toggle { display:grid; align-content:center; justify-items:center; gap:5px; grid-column:3; grid-row:1; width:44px; height:44px; border:1px solid var(--line); background:transparent; cursor:pointer; }
+  .nav-toggle span { width:19px; height:1px; background:currentColor; }
+  .nav-toggle[aria-expanded="true"] { color:var(--acid); }
+  .nav-toggle[aria-expanded="true"] span:first-child { transform:translateY(6px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity:0; }
+  .nav-toggle[aria-expanded="true"] span:last-child { transform:translateY(-6px) rotate(-45deg); }
+  #inicio.menu-ready .nav { display:none; }
+  #inicio.menu-ready .nav-toggle[aria-expanded="true"] + .nav { display:grid; gap:0; margin-top:4px; border-top:1px solid var(--line); font-size:.8rem; }
+  #inicio.menu-ready .nav a { display:flex; align-items:center; min-height:44px; padding:6px 4px; }
+  #inicio.menu-ready .nav a + a { border-top:1px solid var(--line); }
+}
+
+h1,h2,h3 { line-height:1.12; }
+.opening h1 { font-size:clamp(2.15rem,6.2vw,6.5rem); line-height:1.05; }
+.section h2 { font-size:clamp(2rem,4.8vw,5rem); }
+.opening-synopsis h2 { font-size:clamp(1.65rem,3.2vw,3.1rem); }
+.hero-copy h2 { font-size:clamp(2.3rem,6vw,6rem); }
+.pull { line-height:1.2; }
+
+.site-map { position:relative; }
+#predio img { height:auto; }
+.site-marker,.site-marker-key { width:14px; height:14px; border:2px solid #101313; border-radius:50%; background:var(--acid); box-shadow:0 0 0 2px var(--acid); }
+.site-marker { position:absolute; left:74.5%; top:54.6%; transform:translate(-50%,-50%); }
+.site-map-caption { display:flex; align-items:center; gap:12px; padding-left:2px; }
+.site-context { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:clamp(24px,5vw,72px); margin-top:clamp(24px,4vw,56px); align-items:start; }
+.site-context figure { max-width:380px; }
+@media (max-width:760px) { .site-context { grid-template-columns:1fr; } }
+.wordmark { display:inline-flex; align-items:center; justify-self:start; flex:none; }
+.wordmark img { width:38px; height:auto; }
+
+.cv-layout { display:grid; grid-template-columns:minmax(0,370px) minmax(0,1fr); align-items:start; gap:clamp(20px,4vw,56px); }
+.cv-image { width:100%; height:auto; }
+.cv-layout .cv-actions { margin-top:18px; }
+@media (max-width:760px) { .cv-layout { grid-template-columns:1fr; } .cv-image { max-width:370px; } }
+
+.dossier-layout { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); align-items:center; gap:clamp(20px,5vw,72px); }
+.dossier-layout img { width:100%; height:auto; }
+.dossier-layout .cta { margin-top:18px; }
+@media (max-width:760px) { .dossier-layout { grid-template-columns:1fr; } }
+main .section p:not(.label, .opening-subtitle, .meta, .caption) { text-align:justify; hyphens:auto; overflow-wrap:break-word; }
+
+.opening-grid { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); align-items:center; gap:clamp(28px,7vw,110px); }
+@media (max-width:900px) { .opening-grid { grid-template-columns:1fr; } }
+
+.opening-diagram { width:100%; min-width:0; position:relative; color:var(--acid); }
+.diagram-guides { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.opening-diagram figcaption span { position:absolute; transform:translateY(-50%); font-size:clamp(.66rem,1.2vw,1rem); font-weight:700; }
+.diagram-individuo { left:3%; top:27.26%; }
+.diagram-humanidad { right:3%; top:41.25%; }
+.diagram-fractura { left:3%; top:62.25%; }
+.diagram-vacio { right:3%; top:75.05%; }
+.opening-diagram img { display:block; width:100%; height:auto; }
+
+.ficha-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,4vw,56px);margin-top:36px}
+.ficha-group{min-width:0;border-top:1px solid var(--line);padding-top:18px}
+.ficha-group h3{font-size:clamp(20px,2.2vw,30px);line-height:1.25;color:var(--acid)}
+.ficha-group dl{margin:0}.ficha-group dl div+div,.ficha-group p+p{margin-top:12px}
+.ficha-group dt{font-weight:700}.ficha-group dd{margin:3px 0 0}.ficha-group dd,.ficha-group p{color:var(--muted)}
+.ficha-sources{display:flex;flex-wrap:wrap;gap:8px 18px}
+@media(max-width:760px){.ficha-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header id="inicio"><a class="wordmark" href="#inicio"><img src="media/logo-purpose.png" width="154" height="150" alt="Amplitud Foundation"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menú"><span></span><span></span><span></span></button><nav id="site-nav" class="nav" aria-label="Secciones"><a href="#obra">La obra</a><a href="#referencias">Referencias</a><a href="#proyecto">Conceptualización</a><a href="#predio">Predio</a><a href="#rostros">Retratos</a><a href="#luz">Luz</a><a href="#construccion">Montaje</a><a href="#energia">Energía</a><a href="#ficha-tecnica">Ficha técnica</a><a href="#cv">Trayectoria</a><a href="#dossier">Dossier ↗</a></nav><div class="language" role="group" aria-label="Selector de idioma"><button type="button" data-lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" data-lang="en" aria-pressed="false" aria-label="English">EN</button></div></header>
+<main id="contenido">
+<section id="obra" class="section opening" aria-labelledby="apertura-titulo">
+  <div class="opening-grid">
+    <div>
+  <h1 id="apertura-titulo" lang="de">HIER IST KEIN WARUM</h1>
+  <p class="intro opening-subtitle">Aquí no hay por qué</p>
+  <div class="reference-project-copy opening-origin">
+    <p lang="es">En “Si esto es un hombre”, Primo Levi relata un episodio ocurrido durante su cautiverio en Auschwitz. Atormentado por la sed, intenta tomar un carámbano que cuelga de una ventana. Un guardia se lo arrebata. Cuando Levi pregunta por qué, recibe una respuesta: «Hier ist kein Warum» («Aquí no hay por qué»).</p>
+<p lang="es">La frase condensa la lógica de un sistema que no solo priva de libertad, sino que niega incluso el derecho a preguntar y con ella, del reconocimiento del otro como sujeto.</p>
+<p lang="es" class="source">Referencia: Primo Levi, Si esto es un hombre (Se questo è un uomo, 1947), capítulo «En el fondo».</p>
+  </div>
+    </div>
+    <figure class="opening-diagram">
+      <img src="media/diagrama-circular.webp" width="2400" height="1878" alt="Ciclo de la obra: archivo, fractura, encuentro y vacío alrededor de la columna encendida de noche">
+    </figure>
+  </div>
+  <div class="opening-synopsis">
+    <div class="reference-project-copy">
+      <h2>Sinopsis:</h2>
+      <blockquote class="pull">«El mar no existe sin la gota. Pero ninguna gota, por sí sola, alcanza a ser el mar».</blockquote>
+      <p>El proyecto consiste en una columna hecha con fragmentos de cristales que representan la humanidad: quebrada, múltiple, aparentemente caótica.</p>
+      <p>Cada fragmento de la pieza contiene una memoria individual, una ausencia. La suma de ellas produce una estructura que no podría sostenerse por separado. Así, la obra retoma la frase del guardia para confrontar aquella negación con un gesto de memoria: reconociendo la singularidad de cada existencia allí donde la violencia buscó reducir a las personas al anonimato.</p>
+    </div>
+    <figure>
+      <button class="click-image frame" type="button" aria-label="Prueba escultórica de cristales fragmentados."><img src="media/prueba.webp" width="548" height="685" alt="Prueba escultórica de cristales fragmentados."></button>
+      <figcaption class="caption">Prueba escultórica de cristales fragmentados.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section" id="referencias"><p class="label">Referencias históricas</p><h2>¿Qué es lo que puede<br>sostener una columna?</h2><div class="references"><figure><img src="media/trajana.webp" loading="lazy" alt="Columna Trajana en Roma"><figcaption><h3>Columna Trajana</h3><p>Roma · 113 d. C. El friso inscribe un relato en el fuste.</p><p>En arquitectura, la columna tiene la función de recibir el peso de lo que está arriba y llevarlo hasta la tierra. Trabaja en silencio, por compresión: cada parte empuja sobre la que tiene debajo. Nada en ella está solo; cada punto depende del que lo sostiene y sostiene a su vez al siguiente. Una columna es, ante todo, una cadena de apoyos: un pacto vertical entre lo que carga y lo que es cargado.</p><p>Desde Vitruvio, la columna fue también un cuerpo. Sostener fue siempre un gesto humano.</p><p>Por lo tanto, la historia de la columna también es una historia de la memoria. En Roma, la Columna Trajana (113 d.C.) narra en un friso en espiral las guerras contra los dacios, y en su base se guardaron las cenizas del emperador. Es columna, relato y tumba a la vez: sostiene el peso del recuerdo tanto como el de la piedra.</p></figcaption></figure><figure><img src="media/vendome.webp" loading="lazy" alt="Columna Vendôme en París"><figcaption><h3>Columna Vendôme</h3><p>París · 1810. La columna conserva la historia de su caída y reconstrucción.</p><p>En París, la Columna Vendôme (1810) está recubierta con el bronce fundido de los cañones tomados en Austerlitz, la materia de la guerra convertida en monumento. En 1871, durante la Comuna, fue derribada y quedó partida en el suelo; años después se la volvió a levantar. Una columna que conoció su propia caída y que hoy está de pie con esa historia dentro.</p></figcaption></figure><figure><img src="media/hamburgo.webp" loading="lazy" alt="Acceso al lugar del Monumento contra el fascismo"><figcaption><h3>Monumento contra el fascismo</h3><p>Hamburgo-Harburg · 1986–1993. Tras su descenso quedó una ventana hacia el pozo.</p><p>En Hamburgo-Harburg, Jochen Gerz y Esther Shalev-Gerz levantaron en 1986 el Monumento contra el fascismo: una columna de doce metros recubierta de plomo, sobre la que los visitantes escribían su nombre. A medida que se llenaba, la iban hundiendo en la tierra, hasta que en 1993 desapareció por completo. Esa columna sostiene memoria en lugar de peso, y deja en quien mira la responsabilidad de recordar.</p></figcaption></figure></div>
+<div class="reference-project" id="proyecto">
+  <p class="label">Conceptualización</p>
+  <h3 lang="de">Hier ist kein Warum</h3>
+  <div class="reference-project-stage">
+    <figure><img class="frame" src="media/vidrios.png" width="1456" height="812" loading="lazy" alt="Fragmentos de vidrio roto"></figure>
+    <div class="reference-project-copy">
+    <p lang="es">Las columnas de la historia sostienen su peso con la solidez de la piedra o del bronce. La de esta obra está hecha de fragmentos de vidrios rotos, el material menos indicado para resistir: se quiebra justo donde una columna tendría que soportar la carga. Y aun así se mantiene en pie. Ningún fragmento podría sostenerse por sí solo; es el encuentro entre ellos lo que da forma al conjunto. La estructura existe porque existen los fragmentos, como el mar existe porque existen las gotas.</p>
+    <p lang="es">Mantenerse en pie fue también la forma de la resistencia en los guetos y en los campos. Resistir fue tomar las armas en Varsovia, y fue también enseñar a leer a escondidas, rezar, escribir un diario, esconder una fotografía. Cada gesto sostenía algo de lo humano en un sistema diseñado para quebrarlo. La columna recoge esa resistencia: fragmentos que, apoyados unos en otros, se niegan a caer.</p>
+    <p lang="es">Así funciona también la memoria colectiva. Cada vida es frágil, cada vida quedó quebrada por lo que pasó, y es la suma de esas vidas, apoyadas unas sobre otras, la que impide que todo se derrumbe. Si se quita un fragmento, la columna pierde un punto de apoyo. Si se olvida una vida, la memoria se debilita en ese lugar exacto.</p>
+    <p lang="es">Así, el individuo contiene simbólicamente a la humanidad. Cada persona conservada en las fotografías de archivo es una gota que, junto con otros fragmentos, constituye el mar: una humanidad hecha de individualidades irrepetibles. Es decir, cada fotografía encapsulada entre los planos de cristal contiene una presencia particular, una experiencia irrepetible.</p>
+    <p lang="es">Esas fotografías provienen de los archivos familiares de sobrevivientes de la comunidad: retratos de antes de la guerra, de los años de reconstrucción, de los hijos y los nietos. En la columna se ordenan de abajo hacia arriba: cerca de la base, quienes no volvieron; más arriba, quienes sobrevivieron; en lo alto, quienes nacieron después. La cadena de apoyos se vuelve una genealogía, donde cada generación se sostiene sobre la anterior.</p>
+    </div>
+  </div>
+  <div class="reference-project-stage">
+    <figure><button class="click-image frame" type="button" aria-label="Ampliar primer plano del vidrio"><img src="media/detalle.webp" width="1600" height="900" loading="lazy" alt="Rostros en facetas a ambos lados del vacío central."></button></figure>
+    <div class="reference-project-copy">
+    <p lang="es">La lectura cambia con la distancia: de cerca aparecen personas y detalles; de lejos, las imágenes se unen en una masa colectiva. Ninguna vida se repite; ninguna persona debería ser intercambiable.</p>
+    <p lang="es">Los fragmentos de la historia pueden distorsionar o interrumpir el tiempo que nos ha tocado vivir, pero sin borrar completamente su identidad.</p>
+    <p lang="es">Así, la columna de cristales rotos constituye una totalidad formada por piezas distintas. Lo fragmentario es la condición material de la memoria que intenta mantenerse unida. La humanidad se percibe como conjunto, sin diluir la singularidad de las vidas que la forman.</p>
+    <p lang="es">Las dos mitades permanecen separadas por un corte vertical limpio, atravesado por aire. El vacío representa lo que falta, lo que la historia interrumpió y lo que ninguna reconstrucción puede restituir por completo.</p>
+    <p lang="es">Quien mira de frente percibe una sola forma dividida. Al desplazarse, descubre nuevas superposiciones de rostros y nuevas ausencias. La obra se completa con el movimiento del espectador.</p>
+    </div>
+  </div>
+  <div class="reference-project-stage">
+    <figure><button class="click-image frame" type="button" aria-label="Vista completa de la columna de vidrio fracturado, desde la punta hasta la base, junto al lago."><img src="media/obra.webp" width="1600" height="900" loading="lazy" alt="Vista completa de la columna de vidrio fracturado, desde la punta hasta la base, junto al lago."></button></figure>
+    <div class="reference-project-copy">
+    <p lang="es"><strong>El individuo:</strong> la imagen de archivo de una vida singular.</p>
+    <p lang="es"><strong>La Humanidad:</strong> la reunión de esas vidas en la estructura escultórica.</p>
+    <p lang="es"><strong>La fractura:</strong> la violencia que interrumpe las existencias y la transmisión de la memoria.</p>
+    <p lang="es"><strong>El vacío:</strong> El vínculo con quienes ya no están.</p>
+    <p lang="es">La experiencia de la obra se organiza en dos escalas: desde lejos, un solo cuerpo; desde cerca, la imposibilidad de reducirlo a una totalidad anónima.</p>
+    </div>
+  </div>
+<div class="split-links"><a href="#rostros">De cerca · Los rostros <span aria-hidden="true">↘</span></a><a href="#luz">De lejos · La columna <span aria-hidden="true">↘</span></a></div>
+</div>
+</section>
+<section class="hero" aria-labelledby="titulo"><figure class="hero-visual"><img class="hero-photo" src="media/obra.webp" width="1600" height="900" fetchpriority="high" alt="Columna esbelta de vidrio dividida en dos, junto al lago, con fragmentos sobre la grava."><figcaption class="meta">Visualización del memorial junto al lago</figcaption></figure><div class="hero-copy"><p class="label">Propuesta escultórica · 2026</p><h2 id="titulo" lang="de">Hier ist<br>kein Warum</h2><em>Aquí no hay por qué</em></div></section>
+<div class="bands" aria-label="Dimensiones propuestas"><div><strong>3,60 m</strong><span>Altura de la columna</span></div><div><strong>15 cm</strong><span>Vacío entre las mitades</span></div><div><strong>2,40 × 1,60 m</strong><span>Huella de la base</span></div><div><strong>Exterior</strong><span>Emplazamiento junto al lago</span></div></div>
+
+<section id="predio" class="section" aria-labelledby="predio-titulo">
+  <h2 id="predio-titulo">Emplazamiento propuesto</h2>
+  <figure>
+    <div class="site-map">
+      <img src="media/predio-aerea.webp" width="2048" height="1151" loading="lazy" alt="Vista aérea del predio con las estaciones del recorrido memorial">
+      <span class="site-marker" aria-hidden="true"></span>
+    </div>
+    <figcaption class="caption site-map-caption"><span class="site-marker-key" aria-hidden="true"></span><span>Emplazamiento propuesto</span></figcaption>
+  </figure>
+  <div class="site-context">
+    <div class="reference-project-copy">
+      <p>La columna se propone junto al sendero de la orilla, cerca de la estación «Survivors rebuild lives in US/Sarasota». Allí, los retratos de distintas generaciones dialogan con la reconstrucción de la vida de los sobrevivientes y sus familias.</p>
+      <p>El punto señalado permite plantear una pausa en el recorrido. De frente se percibe el corte vertical. Al desplazarse hacia un costado, cambian las superposiciones de los rostros. La iluminación de la columna dialoga con «Menorah – Resilience».</p>
+    </div>
+    <figure>
+      <img class="frame" src="media/predio-perspectiva.webp" width="1046" height="1050" loading="lazy" alt="Perspectiva general del predio y el estanque">
+      <figcaption class="caption">Perspectiva general del predio</figcaption>
+    </figure>
+  </div>
+</section>
+<section id="rostros" class="section"><p class="label">Testimonio y transmisión</p><h2>Cuatro generaciones</h2><p class="intro">En una familia, cada generación ocupa un lugar en la sucesión del parentesco. Entre una y otra se transmiten relatos, fotografías y silencios.</p>
+<div class="toolbar" role="group" aria-label="Serie de retratos"><button type="button" data-series="mujer" aria-pressed="true">Serie femenina</button><button type="button" data-series="hombre" aria-pressed="false">Serie masculina</button></div>
+<p class="small">Tocá un retrato para moverlo al lugar siguiente.</p>
+<div class="portraits" id="portrait-grid">
+<figure><button class="portrait-button" type="button"><img src="media/mujer-1.webp" width="589" height="393" loading="lazy" alt="Retrato conceptual de la abuela"></button><figcaption>Abuela · 94 años</figcaption></figure>
+<figure><button class="portrait-button" type="button"><img src="media/mujer-2.webp" width="588" height="393" loading="lazy" alt="Retrato conceptual de la hija"></button><figcaption>Hija · 50 años</figcaption></figure>
+<figure><button class="portrait-button" type="button"><img src="media/mujer-3.webp" width="589" height="393" loading="lazy" alt="Retrato conceptual de la nieta"></button><figcaption>Nieta · 36 años</figcaption></figure>
+<figure><button class="portrait-button" type="button"><img src="media/mujer-4.webp" width="588" height="393" loading="lazy" alt="Retrato conceptual de la bisnieta"></button><figcaption>Bisnieta · 8 años</figcaption></figure>
+</div><p class="small">Retratos ficticios generados con IA para ilustrar la propuesta. La selección de fotografías de archivo se realizará con la institución convocante.</p>
+<div class="material"><figure><button class="click-image" type="button" aria-label="Ampliar primer plano del vidrio"><img src="media/detalle.webp" loading="lazy" alt="Rostros en facetas a ambos lados del vacío central."></button><figcaption class="caption">Facetas y vacío central</figcaption></figure><figure><button class="click-image" type="button" aria-label="Ampliar detalle del retrato"><img src="media/ojo.webp" loading="lazy" alt="Detalle de un ojo impreso entre capas de vidrio."></button><figcaption class="caption">Retrato entre las capas del vidrio</figcaption></figure></div></section>
+<section id="luz" class="section"><p class="label">Emplazamiento</p><h2 lang="es">«Sobre nuestro reflejo se levanta todo lo demás.»</h2>
+<div class="reference-project-stage light-story"><div class="reference-project-copy" lang="es">
+<p>Durante el día, paneles solares integrados a la base captan la luz del sol. De noche, esa energía alimenta la base de la columna.</p>
+<p>La palabra resiliencia viene del latín resilire, volver a saltar. En física nombra la capacidad de un material para recuperar su forma después de un golpe. Para quienes sobrevivieron, la forma anterior quedó perdida. Su resiliencia consistió en seguir adelante con la fractura adentro.</p>
+<p>Después de la guerra, muchos reconstruyeron su vida lejos de donde habían nacido: formaron familias, aprendieron otra lengua, llegaron a lugares como Florida. Esa vida nueva se levantó sobre la fractura, con ella adentro.</p>
+<p>La escultura toma esa idea al pie de la letra. La fractura permanece; mientras lo que regresa cada día es la luz.</p>
+<p>La columna se apoya sobre una base de obsidiana, material volcánico con el que se hicieron los primeros espejos de la humanidad. Es decir, en la base de la obra está ese origen: una superficie oscura que devuelve la imagen de quien se acerca. Antes de ver los fragmentos, el espectador se encuentra consigo mismo, y sobre ese reflejo se levanta todo lo demás.</p>
+<p>Cada material es un pronunciamiento cultural que refleja una posición ante la vida. La obsidiana pertenece al tiempo anterior a cualquier industria; el vidrio es materia trabajada por la mano y el fuego; las fotografías son documentos. Los paneles solares reciben lo que la naturaleza da cada día y lo convierten en energía.</p>
+<p>La humanidad aparece así en todas sus formas: puede salvarse y, al mismo tiempo, condenarse a su final. Pero también es una herramienta capaz de sostener la vida. Ahí está su resiliencia: seguir confiando en lo que los seres humanos pueden hacer, después de haber visto lo peor de lo que hicieron.</p>
+<p>Esa doble condición, la de salvarse o condenarse, se inscribe en la obra como el paso del día a la noche: la misma pieza que recibe la luz atraviesa también la oscuridad. Guardar es la otra mitad del gesto. La energía que se junta de día se entrega de noche, cuando nadie la pide, y cada día hay que volver a empezar. Así funciona el testimonio: lo que una generación vivió se carga en la siguiente, que lo enciende cuando la primera ya no está.</p>
+<p>“En la tradición judía, la luz es una de las formas más antiguas del recuerdo: la vela de yahrzeit en cada aniversario, el ner tamid que no se apaga sobre el arca”. La escultura recoge ese gesto con una tecnología de este tiempo. La resiliencia aparece entonces como un acto cotidiano, sin heroísmo. En los días nublados la luz será más débil, y la obra lo deja ver: una memoria honesta también muestra sus límites.</p>
+<p><em>A la mañana es vidrio y fractura. Al caer la noche, lo que estaba oculto se enciende.</em></p>
+</div><div class="light-study">
+<p class="intro">El mismo punto de vista, desde la primera luz hasta el encendido de la base. Elegí un momento para observar qué facetas se iluminan y cuáles quedan en sombra.</p>
+<div class="toolbar" role="group" aria-label="Momento del día"><button type="button" data-light="amanecer" aria-pressed="false">Mañana</button><button type="button" data-light="obra" aria-pressed="true">Día</button><button type="button" data-light="atardecer" aria-pressed="false">Atardecer</button><button type="button" data-light="noche" aria-pressed="false">Anochecer</button></div>
+<figure><button class="click-image frame" type="button" aria-label="Ampliar estudio de luz"><img id="light-img" src="media/obra.webp" width="1600" height="900" loading="lazy" alt="Estudio diurno de la columna fracturada junto al lago."></button><figcaption id="light-caption" class="caption" aria-live="polite">Luz de día · La transparencia deja ver las superposiciones y el vacío.</figcaption></figure>
+</div></div></section>
+<section id="construccion" class="section"><p class="label">Materiales y montaje</p><h2>De la esquirla<br>a la columna</h2><figure><button class="click-image" type="button" aria-label="Ampliar prearmado de las placas"><img src="media/prearmado.webp" loading="lazy" alt="Tres momentos del prearmado de un retrato entre dos placas de vidrio."></button></figure>
+<div class="steps"><p><strong>Preparación</strong>Dos placas y una lámina translúcida con el retrato impreso para la prueba en seco.</p><p><strong>Encuadre</strong>La lámina se coloca sobre el primer vidrio para comprobar la posición del rostro.</p><p><strong>Prueba en seco</strong>La segunda placa se alinea antes del laminado definitivo.</p></div>
+<div class="material"><figure><button class="click-image" type="button" aria-label="Ampliar montaje junto al lago"><img src="media/montaje.webp" loading="lazy" alt="Operarios alinean una placa con retrato en la columna junto al lago."></button><figcaption class="caption">Simulación del montaje junto al lago</figcaption></figure><figure><button class="click-image" type="button" aria-label="Ampliar encuentro con la base"><img src="media/esquirlas.webp" loading="lazy" alt="Esquirlas sobre la base y la grava, con los paneles laterales despejados."></button><figcaption class="caption">El vidrio se acumula al pie y se dispersa sobre la grava</figcaption></figure></div>
+<div class="technical"><details open><summary>Vidrio, retratos y estructura</summary><p>Vidrio laminado de seguridad, con imágenes entre capas. Dos bastidores interiores de acero inoxidable AISI 316 dejan libre la fractura central. Los anclajes y las secciones requieren cálculo para el sitio.</p></details><details><summary>Base y mantenimiento</summary><p>Base propuesta de 2,40 × 1,60 × 0,60 m. Núcleo de hormigón armado y acabado de obsidiana pulida, con granito negro como alternativa. Revisar vidrios, drenaje y paneles de manera periódica, y fijaciones, batería y LED en la inspección anual.</p></details></div></section>
+<section id="energia" class="section"><p class="label">Base fotovoltaica</p><h2>Del sol a los cantos</h2><p class="intro">Dos franjas solares se integran al ras en los laterales superiores del plinto. De día cargan la batería. Al oscurecer, la energía almacenada alimenta LED blancos dirigidos hacia el vidrio.</p>
+<div class="material"><figure><button class="click-image" type="button" aria-label="Ampliar vista cenital de la base"><img src="media/cenital.webp" loading="lazy" alt="Vista cenital con módulos solares a ambos lados de las dos mitades de vidrio."></button><figcaption class="caption">Vista cenital · Franjas laterales y fractura central</figcaption></figure><figure><button class="click-image solar-es" type="button" aria-label="Ampliar funcionamiento de la base solar"><img src="media/ciclo.webp" loading="lazy" alt="Esquema de carga solar diurna, iluminación nocturna y corte conceptual de la base." style="object-fit:contain"></button><div class="solar-en" lang="en"><p><strong>Day:</strong> sunlight → solar strips → charge controller → battery.</p><p><strong>Night:</strong> battery → dusk control → white LEDs → glass edges.</p><p><strong>Base:</strong> flush side panels, a clear central gap and rear access to the service compartment.</p></div><figcaption class="caption">Ciclo día y noche · Acceso técnico posterior</figcaption></figure></div>
+<div class="technical"><details><summary>Offgridtec 30W Mono</summary><p>Módulo rígido de 30 Wp. 560 × 360 × 25 mm.</p><a class="tech-link" href="https://www.offgridtec.com/media/product_attachements/Datasheet-3-01-001530-DE%2BEN.pdf">Ficha oficial ↗</a></details><details><summary>Solbian SP 15 L AiO</summary><p>Módulo flexible de 51 W. 1089 × 292 × 2 mm de espesor de panel.</p><a class="tech-link" href="https://blog.solbian.eu/hubfs/AiO24/AiO%202.0%20Connect%202025.pdf?hsLang=en">Ficha oficial ↗</a></details></div><p class="small">Referencias comerciales para comparar. La elección, el encastre y la autonomía se definirán según las dimensiones útiles, el asoleamiento y el consumo de los LED.</p></section>
+<section id="ficha-tecnica" class="section" aria-labelledby="ficha-titulo">
+<h2 id="ficha-titulo">Ficha técnica</h2>
+<div class="ficha-grid">
+<div class="ficha-group"><h3>Identificación</h3><dl><div><dt>Título</dt><dd>Hier ist kein Warum (Aquí no hay por qué)</dd></div><div><dt>Autor</dt><dd>Amplitud Foundation</dd></div><div><dt>Año</dt><dd>2026</dd></div><div><dt>Tipología</dt><dd>Escultura de exterior, memorial</dd></div><div><dt>Emplazamiento</dt><dd>Exterior, junto al lago.</dd></div></dl></div>
+<div class="ficha-group"><h3>Materiales</h3><dl><div><dt>Columna</dt><dd>Módulos facetados de vidrio laminado de seguridad, con hojas transparentes extraclaras y fotografías de archivo encapsuladas entre las capas.</dd></div><div><dt>Estructura interna</dt><dd>Acero inoxidable AISI 316, apto para exterior.</dd></div><div><dt>Base</dt><dd>Placas de obsidiana pulida sobre núcleo de hormigón armado.</dd></div><div><dt>Energía</dt><dd>Paneles fotovoltaicos monocristalinos integrados en la cara superior de la base, con baterías de litio alojadas dentro de la base.</dd></div></dl></div>
+<div class="ficha-group"><h3>Dimensiones (propuesta)</h3><dl><div><dt>Altura total</dt><dd>Por definir</dd></div><div><dt>Columna</dt><dd>3,60 m de alto × 1,20 m de ancho × 0,80 m de profundidad</dd></div><div><dt>Separación entre las dos mitades</dt><dd>0,15 m</dd></div><div><dt>Base</dt><dd>2,40 × 1,60 × 0,60 m</dd></div></dl></div>
+<div class="ficha-group"><h3>Funcionamiento</h3><p>Carga solar diurna y encendido automático al anochecer, con una autonomía estimada de 8 a 10 horas.</p></div>
+<div class="ficha-group"><h3>Especificación preliminar del vidrio</h3><p>Configuración de partida para prototipado: dos hojas termoendurecidas (HS) de 8 mm con interlámina ionoplástica transparente de 1,52 mm, tipo SentryGlas®. Espesor nominal del conjunto: 17,52 mm.</p><p>Los contornos irregulares reproducen la geometría de las esquirlas. Se proponen cantos pulidos, puntas accesibles redondeadas y retención mecánica al bastidor. El espesor definitivo y las fijaciones se determinarán por módulo según su geometría, apoyos, viento, impacto y comportamiento tras rotura.</p><p>Para encapsular los retratos se propone ensayar impresión cerámica digital en una cara interior del vidrio. La interlámina EVA impresa queda como alternativa a ensayar. En ambos casos, el laminador debe validar el conjunto impreso y su adherencia, transparencia y durabilidad frente a humedad y radiación UV.</p><p>Referencias de especificación: ASTM C1048 para las hojas tratadas térmicamente y ASTM C1172 para el laminado. El conjunto final requiere verificación de impacto y retención tras rotura conforme a los requisitos aplicables al emplazamiento.</p><p class="ficha-sources"><a class="tech-link" href="https://store.astm.org/c1048-25.html">ASTM C1048 ↗</a><a class="tech-link" href="https://store.astm.org/c1172-24e01.html">ASTM C1172 ↗</a><a class="tech-link" href="https://www.kuraray.com/content/dam/kuraray/in/en/products/sentryglas/broucher/SentryGlas_engl_web.pdf">SentryGlas® ↗</a></p></div>
+<div class="ficha-group"><h3>Créditos y referencias visuales</h3><p>Las imágenes de referencia histórica serán proporcionadas por la institución que hace la convocatoria.</p><p>Las visualizaciones escultóricas corresponden a estudios conceptuales desarrollados para el proyecto Hier ist kein Warum y no representan una obra construida.</p></div>
+</div>
+</section>
+<section id="cv" class="section"><p class="label">Trayectoria</p><h2>Giovanni Zapata</h2><div class="cv-layout"><img class="cv-image" src="media/giovanni-zapata.png" width="370" height="208" loading="lazy" alt="Giovanni Zapata"><div><p class="intro">Artista multidisciplinario · Quito / Buenos Aires</p><p>Giovanni Francisco Zapata Castellanos trabaja con instalaciones inmersivas, videoarte, mapping e interactividad. Su obra se ha presentado en la Bienal de Cuenca, el Museo de Arte Moderno de Buenos Aires, MAPP_Montreal, Viena, Japón, Portugal y otros festivales.</p><div class="cv-actions"><a class="cta" href="giovanni-zapata-cv.pdf" download>Descargar CV (PDF)</a><a class="cta" href="dossier-hz.pdf" download>Descargar dossier de [Hz] (PDF)</a><a class="tech-link" href="https://vimeo.com/giovannizapata">Portfolio ↗</a></div></div></div></section>
+<section id="dossier" class="section"><div class="dossier-layout"><img src="media/dossier-grabado.webp" width="1672" height="941" loading="lazy" alt="Grabado de una madre y su hija frente a la escultura junto al lago"><div><p class="label">Documentación</p><h2>Dossier del proyecto</h2><p>Amplitud Foundation · 2026</p><p class="small">Las imágenes de la escultura son visualizaciones conceptuales de la propuesta.</p><a class="cta dossier" href="dossier.pdf" download>Descargar PDF <span aria-hidden="true">↓</span></a></div></div></section>
+</main><footer>Hier ist kein Warum / <span class="footer-translation">Aquí no hay por qué</span></footer>
+<dialog class="dialog" id="zoom" aria-label="Imagen ampliada"><form method="dialog"><button>Cerrar <span aria-hidden="true">×</span></button></form><figure><img alt=""><figcaption></figcaption></figure></dialog>
+<script src="i18n.js"></script>
+<script>
+const lighting={amanecer:"Mañana · La luz baja deja reflejos oblicuos sobre la orilla.",obra:"Luz de día · La transparencia deja ver las superposiciones y el vacío.",atardecer:"Atardecer · La luz ámbar alcanza las facetas orientadas al sol.",noche:"Anochecer · Los LED blancos iluminan algunos cantos desde la base."};
+const lightButtons=[...document.querySelectorAll("[data-light]")];
+const lightImage=document.querySelector("#light-img");
+const lightCaption=document.querySelector("#light-caption");
+lightButtons.forEach(button=>button.addEventListener("click",()=>{
+  const key=button.dataset.light;
+  lightButtons.forEach(item=>item.setAttribute("aria-pressed",String(item===button)));
+  lightImage.src="media/"+key+".webp";
+  lightImage.alt=tr(lighting[key])+(locale==="en"?" View of the lakeside memorial.":" Vista del memorial junto al lago.");
+  lightCaption.textContent=tr(lighting[key]);
+}));
+const series={mujer:["Abuela · 94 años","Hija · 50 años","Nieta · 36 años","Bisnieta · 8 años"],hombre:["Abuelo · Posguerra","Hijo · Años setenta","Nieto · Años noventa","Bisnieto · Años 2020"]};
+const seriesButtons = [...document.querySelectorAll("[data-series]")];
+const portraitFigures = [...document.querySelectorAll("#portrait-grid figure")];
+const portraitOrder = { mujer: [0, 1, 2, 3], hombre: [0, 1, 2, 3] };
+let activeSeries = "mujer";
+
+function renderPortraits() {
+  portraitFigures.forEach((figure, position) => {
+    const portrait = portraitOrder[activeSeries][position];
+    const caption = tr(series[activeSeries][portrait]);
+    const image = figure.querySelector("img");
+    image.src = "media/" + activeSeries + "-" + (portrait + 1) + ".webp";
+    image.alt = caption;
+    figure.querySelector("button").setAttribute("aria-label", tr("Mover retrato") + " · " + caption);
+    figure.querySelector("figcaption").textContent = caption;
+  });
+}
+
+seriesButtons.forEach(button => button.addEventListener("click", () => {
+  activeSeries = button.dataset.series;
+  seriesButtons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+  renderPortraits();
+}));
+
+portraitFigures.forEach((figure, position) => {
+  figure.querySelector("button").addEventListener("click", () => {
+    const order = portraitOrder[activeSeries];
+    const next = (position + 1) % order.length;
+    [order[position], order[next]] = [order[next], order[position]];
+    renderPortraits();
+    portraitFigures[next].querySelector("button").focus({ preventScroll: true });
+  });
+});
+const dialog=document.querySelector("#zoom");
+document.querySelectorAll(".click-image").forEach(button=>button.addEventListener("click",()=>{
+  const img=button.querySelector("img");
+  const preview=dialog.querySelector("img");
+  preview.src=img.currentSrc||img.src;
+  preview.alt=img.alt;
+  dialog.querySelector("figcaption").textContent=button.closest("figure").querySelector("figcaption")?.textContent||img.alt;
+  dialog.showModal();
+}));
+dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
+const mobileToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector("#site-nav");
+const mobileNav = matchMedia("(max-width:900px)");
+
+function closeMenu() {
+  mobileToggle.setAttribute("aria-expanded", "false");
+}
+
+mobileToggle.addEventListener("click", () => {
+  mobileToggle.setAttribute("aria-expanded", String(mobileToggle.getAttribute("aria-expanded") === "false"));
+});
+siteNav.addEventListener("click", event => {
+  if (event.target.closest("a")) closeMenu();
+});
+mobileToggle.closest("header").addEventListener("keydown", event => {
+  if (event.key === "Escape" && mobileToggle.getAttribute("aria-expanded") === "true") {
+    closeMenu();
+    mobileToggle.focus();
+  }
+});
+mobileNav.addEventListener("change", closeMenu);
+mobileToggle.closest("header").classList.add("menu-ready");
+
+initLanguage();
+</script>
+</body>
+</html>

@@ -263,6 +263,12 @@ const translations = {
   "el mar": "the sea",
   "En cada vida,": "In every life,",
   "la luz de la humanidad": "the light of humanity",
+  "Ampliar la base encendida en la hora azul": "Enlarge the base lit at blue hour",
+  "La base encendida en la hora azul: los LED iluminan los cristales y los rostros desde abajo.": "The base lit at blue hour: LEDs light the glass and the faces from below.",
+  "Hora azul · Los LED encienden los cristales desde la base": "Blue hour · LEDs light the glass from the base",
+  "Ampliar corte esquemático de la base": "Enlarge schematic section of the base",
+  "Corte esquemático de la base: de día las franjas solares cargan la batería; al anochecer la batería alimenta los LED hacia el vidrio.": "Schematic section of the base: by day the solar strips charge the battery; at dusk the battery powers LEDs aimed at the glass.",
+  "Corte esquemático · Carga de día e iluminación al anochecer": "Schematic section · Daytime charging and lighting at dusk",
   "Selector de idioma": "Language selector"
 };
 

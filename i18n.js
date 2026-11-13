@@ -261,6 +261,8 @@ const translations = {
   "Seleccionar imagen": "Select image",
   "En cada gota,": "In every drop,",
   "el mar": "the sea",
+  "En cada vida,": "In every life,",
+  "la luz de la humanidad": "the light of humanity",
   "Selector de idioma": "Language selector"
 };
 

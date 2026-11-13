@@ -259,6 +259,8 @@ const translations = {
   "Ojo fragmentado entre vidrios y grava": "Fragmented eye among glass and gravel",
   "Imagen siguiente": "Next image",
   "Seleccionar imagen": "Select image",
+  "En cada gota,": "In every drop,",
+  "el mar": "the sea",
   "Selector de idioma": "Language selector"
 };
 
